@@ -21,4 +21,5 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: compiled.pdf
+        tag_name: ${{ steps.tag_version.outputs.new_tag }}
         
